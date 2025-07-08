@@ -1,6 +1,9 @@
 # 🌱 SmartSegNet: Segmentación Semántica de Malezas UAV con Deep Learning
 
-![Segmentación ejemplo](https://raw.githubusercontent.com/DiegoCuaycal/SmartSegNet/main/preview_example.png) <!-- Reemplaza por tu imagen real -->
+<p align="center">
+  <img src="SmartSegNet.png" alt="SmartSegNet Logo" width="300"/>
+</p>
+
 
 ## 📘 Descripción del Proyecto
 
