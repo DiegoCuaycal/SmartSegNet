@@ -84,6 +84,7 @@ Para ejecutar la evaluación con el modelo entrenado:
 ```bash
 python evaluate.py --weights checkpoint_focal_dice.pth
 ```
+---
 ## 📦 Descargar el Modelo Entrenado
 
 👉 Puedes descargar el modelo `.pth` entrenado con mejor mIoU desde la release oficial:
