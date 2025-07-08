@@ -70,7 +70,20 @@ Autor: Jorge Pazos
 - `5`: patata
 
 ---
+## 🧪 Evaluación
 
+El modelo fue evaluado utilizando las métricas **mIoU** (*mean Intersection over Union*) y **Dice Score**, que son ampliamente utilizadas en tareas de segmentación semántica para medir la superposición entre la predicción y la máscara real.
+
+- 🔷 **mIoU**: Evalúa el promedio de la intersección entre la predicción y la verdad de terreno dividido por su unión, por clase.
+- 🔷 **Dice Score**: Mide la similitud entre las dos máscaras, favoreciendo coincidencias exactas.
+
+## ▶️ Reproducir la evaluación
+
+Para ejecutar la evaluación con el modelo entrenado:
+
+```bash
+python evaluate.py --weights checkpoint_focal_dice.pth
+```
 ## 📦 Descargar el Modelo Entrenado
 
 👉 Puedes descargar el modelo `.pth` entrenado con mejor mIoU desde la release oficial:
