@@ -16,17 +16,20 @@ El objetivo fue superar las métricas obtenidas en el trabajo de **Jorge Pazos**
 
 ## ⚔️ Comparativa de Resultados
 
-| Métrica                  | Jorge Pazos (U-Net) | 🔥 Nuestro Modelo (SmartSegNet) |
-|--------------------------|---------------------|-----------------------------|
-| Arquitectura             | Residual U-Net      | EfficientNetV2-S + ASPP + ConvTranspose2d |
-| Resolución de entrada    | 128 × 128           | 256 × 256 píxeles          |
-| Épocas de entrenamiento  | N/D                 | **320**                    |
-| Mejor mIoU               | 0.8053              | **0.8188**                 |
-| Dice Coefficient         | 0.8763              | **0.8721**                 |
-| Train Loss final         | N/D                 | **0.0734**                 |
-| Val Loss final           | N/D                 | **0.0919**                 |
-| Parámetros totales       | N/D                 | **32,961,810**             |
-| Checkpoint final         | N/D                 | **222.70 MB**              |
+
+| **Aspecto Evaluado**              | **Proyecto de Jorge Pazos**                | **Nuestro Proyecto Desarrollado (SmartSegNet)**             | **¿Mejora?**                  |
+|-----------------------------------|-------------------------------------------|-------------------------------------------------------------|-------------------------------|
+| **Total de parámetros**           | 134,901,524                               | 32,961,810                                                  | ✅ Sí (-75.56%)               |
+| **Tamaño del checkpoint (.pth)**  | 514.61 MB                                 | 222.70 MB                                                   | ✅ Sí (-56.74%)               |
+| **Tamaño del archivo para inferencia** | 171.54 MB                            | ~87.6 MB (estimado)                                         | ✅ Sí (-49%)                  |
+| **Resolución de entrada**         | 128 × 128                                 | 256 × 256 píxeles                                           | ✅ Sí (mayor resolución)      |
+| **Épocas de entrenamiento**       | N/D                                       | 320                                                         | ✅ Sí                         |  |
+| **Mean IoU**                      | 0.8053                                    | **0.82**                                                  | ✅ Sí (+0.0147)               |
+| **Train Loss final**              | N/D                                       | 0.0734                                                      | ✅ Sí                         |
+| **Val Loss final**                | N/D                                       | 0.0919                                                      | ✅ Sí                         |
+| **Arquitectura utilizada**        | Residual U-Net (TensorFlow)               | EfficientNetV2-S + ASPP + ConvTranspose2d (PyTorch)         | ✅ Mejorada e interpretada    |
+| **Preparado para drones / UAVs**  | No especificado                          | ✅ Sí (modelo liviano y portable)                           | ✅ Sí                         |
+
 
 ---
 
